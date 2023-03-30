@@ -1,0 +1,81 @@
+  <style>
+    @media (min-width:700px)
+    {
+        body {
+        margin-bottom: 0% !important;
+        font-family: serif !important;
+    }
+    p,ul,ol,figcaption {
+        margin-left: 28% !important;
+        margin-right: 28% !important;
+        color: black !important;
+        line-height: 1.25em !important;
+        text-align: center !important;
+        font-family: serif !important;
+     
+    }
+    strong {
+        text-align: center !important;
+    }
+
+    div {
+       text-align: center !important;
+       font-family: serif !important;
+        
+        font-size: 20px !important;
+        color: #242323 !important;
+        line-height: 28px 
+    }
+    img {
+        max-width: 800px !important;
+        max-height: 1000px !important;
+        }
+
+    td.divider p {
+          width: 100%;
+          contain: content;
+          margin-left: 0% !important;
+          
+        }
+    
+    }
+    
+/* -------------------------------------------------------------------Phone View------------------------------------------------ */
+    h2 {
+        color: #242323;
+    }
+
+    
+    p,ul,ol,figcaption{
+      font-size: 19px;
+      margin-left: 4%;
+      margin-right: 4%;
+      
+    } 
+
+    div {
+       text-align: center;
+       font-family: serif;
+        font-weight: 450;
+        font-size: 20px;
+        color: #242323;
+        line-height: 28px;
+    }
+
+    h2 {
+        margin-left:3%;
+        margin-right:3%;
+        font-size:25px;
+    }
+
+    img {
+      max-width: 650px;
+    }
+        td.divider p {
+          width: 100%;
+          contain: content;
+          margin-left: 0% !important;
+          
+        }
+    
+</style>

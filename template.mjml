@@ -1,0 +1,57 @@
+<mjml>
+  <mj-head>
+    <mj-title>
+      *|MC:SUBJECT|*
+    </mj-title>
+    <mj-preview>
+      *|MC_PREVIEW_TEXT|*
+    </mj-preview>
+        <mj-attributes>
+      <mj-font href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" name="Roboto" />
+      <mj-all font-family="Roboto, Arial, sans-serif"></mj-all>
+      <mj-class name="heading" font-weight="600" font-size="20px" padding-top="20px" padding-bottom="0" />
+      <mj-class name="text" font-weight="400" font-size="18px" color="#242323" line-height="28px" />
+      
+      <mj-style inline="inline">
+        .divider {
+          
+        }
+      </mj-style>
+      <mj-section padding="0px"></mj-section>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+
+    <mj-section>
+      <mj-column>
+       <mj-text font-family="Arial, sans-serif" font-size="18px" font-weight="bold" align="center" mj-class="head">Looking for Jobs? Here is some!</mj-text>
+        <mj-divider css-class="divider"  padding="0" border-color="#000" ></mj-divider>
+        {{#each listings}}
+        <mj-text font-family="Arial, sans-serif" font-size="18px"><span style="font-weight:bold">{{{title}}}</span> - {{{company}}} - {{{location}}}</mj-text>
+        
+        <mj-text font-family="Arial, sans-serif" font-size="14px">
+          <a href="{{link}}?{{@root.utm}}&amp;utm_content=view-details-link">View Details</a>
+        </mj-text>
+        <mj-divider css-class="divider" padding="0" border-color="#000" ></mj-divider>
+        <mj-spacer height="20px" />
+          {{/each}}
+
+       
+      </mj-column>
+    </mj-section>
+        <!-- Required MailChimp Info -->
+    <mj-section>
+      <mj-column width="65%">
+        <mj-text mj-class="text" align="center" font-family="Arial" font-size="12px">&copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*</mj-text>
+        <mj-text mj-class="text" align="center"  font-family="Arial" font-size="12px">*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*</mj-text>
+        <mj-text mj-class="text" align="center"  padding-bottom="8px" font-family="Arial" font-size="12px">*|HTML:LIST_ADDRESS_HTML|*</mj-text>
+        <mj-text mj-class="text" align="center" padding-top="8px" font-family="Arial" font-size="12px">
+          <a href="*|UNSUB|*">Unsubscribe</a> &middot;
+          <a href="*|UPDATE_PROFILE|*">Update Preferences</a> &middot;
+          <a href="*|FORWARD|*">Forward This Email</a> *|END:IF|*
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- /Required MailChimp Info -->
+  </mj-body>
+</mjml>
